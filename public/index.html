@@ -7,8 +7,20 @@
 <title>First Page</title>
 </head>
 <body>
-    <!--put here-->
-    <h1>Hello, Hoola</h1>
-    <!---->
+    <div class="box">
+        <h1 font-size: 60px;>Form Hello</h1>
+    </div>
+    
+    <form method="post" action="/data">
+        <lable for="id_student">ID Student</lable>
+        <input type="text" id="student_id" name="student_id">
+        <lable for="firstname">firstname</lable>
+        <input type="text" id="firstname" name="firstname">
+        <lable for="lastname">lastname</lable>
+        <input type="text" id="lastname" name="lastname">
+        <lable for="gender">gender</lable>
+        <input type="text" id="gender" name="gender">
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
