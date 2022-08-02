@@ -39,9 +39,8 @@
         <li><a href="#tabs-2">2-รายชื่อนิสิต(ALL)</a></li>
         <li><a href="#tabs-3">3-ข้อมูลนิสิต</a></li>
     </ul>
-    <div id="tabs-1">  
 
-
+    <div id="tabs-1"> 
     <form id="my-form">
         <input type="text" id="txtStudentID" name="txtStudentID" placeholder="รหัสนิสิต" />
         <br/>
@@ -53,17 +52,31 @@
         <br/>
         <input type="button" id="btnSubmit" value="Submit"/>
     </form>
-
- 
     </div>
     <div id="tabs-2">
         <button class="ui-button ui-widget ui-corner-all" id="btnRequest">Load</button>
         <div id="myDynamicTable"></div>
     </div>
     <div id="tabs-3">
-        
+
+      <div class="flex justify-center">
+        <div class="rounded-lg shadow-lg bg-white max-w-sm text-center" >
+          <a href="#!" data-mdb-ripple="true" data-mdb-ripple-color="light">
+            <img class="rounded-t-lg" src="/images/profile.png" alt=""/>
+          </a>
+          <div class="p-6">
+            <h5 class="text-gray-900 text-xl font-medium mb-2">Cat slave</h5>
+            <p class="text-gray-700 text-base mb-4">
+              One cat just leads to another.
+            </p>
+            <button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Yeah</button>
+          </div>
+        </div>
+      </div>
+
     </div>
 </div><!-- tabs-->
+
 <script type="text/javascript">
     $(document).ready(function () {
         console.log("Onload");
@@ -92,7 +105,7 @@
                 headers: { 
                     'Content-Type': 'application/json',
                     "Accepts": "application/json",
-                    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90b29scy5lY3BlLm51LmFjLnRoXC9uZXR3b3JrXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjU4ODM2OTkwLCJleHAiOjE2NTg4NDA1OTAsIm5iZiI6MTY1ODgzNjk5MCwianRpIjoiQm9scTZ2cDBtN1dQbmxKUCIsInN1YiI6NTIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.-txUY1vFYcjayHVAnW4vP7YVdVccdAJXLPR4pE8H17c ",
+                    "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90b29scy5lY3BlLm51LmFjLnRoXC9uZXR3b3JrXC9hcGlcL2xvZ2luIiwiaWF0IjoxNjU5NDQxNjM2LCJleHAiOjE2NTk0NDUyMzYsIm5iZiI6MTY1OTQ0MTYzNiwianRpIjoieVhrdlJObnloYXlLMlR2SSIsInN1YiI6NTIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.uhXT99QwhrrL1fbKkIx5m0vw6vX8DO9tRo_pm7ilihI",
                 },
                 success: function(data){
                     console.log(data);
